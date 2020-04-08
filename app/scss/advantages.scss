@@ -1,0 +1,215 @@
+.advantages {
+    padding: 45px 0 35px;
+    .container {
+        padding: 0 20px;
+    }
+    &__list {
+        @include reset-style;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}
+
+.advantages-item {
+    position: relative;
+    padding: 15px 0 20px;
+    &:after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 201px;
+        height: 2px;
+        background-color: #f5f4f1;
+    }
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+    &__data {
+        @include reset-style;
+        margin-bottom: 15px;
+        font-family: "Georgia", Arial, sans-serif;
+        font-size: 50px;
+        color: $data;
+        span {
+            font-size: 20px;
+        }
+    }
+    &__text {
+        @include reset-style;
+        white-space: pre-line;
+        color: #120e0e;
+    }
+}
+
+.education {
+    padding: 0 6px;
+    &__subtitle {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    &__list {
+        margin: 0;
+        margin-bottom: 45px;
+        padding: 0;
+        padding-left: 18px;
+    }
+    &__item {
+        margin-bottom: 20px;
+        color: #de3025;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        p {
+            @include reset-style;
+            white-space: pre-line;
+            color: #000000;
+        }
+    }
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        width: 245px;
+        margin: 0 auto;
+        img {
+            width: 118px;
+            height: 118px;
+            filter: grayscale(1);
+            opacity: .4;
+            &:hover {
+                filter: grayscale(0);
+                opacity: 1;
+                transition: .6s;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .advantages {
+        padding: 60px 0;
+        .container {
+            padding: 0 40px;
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__item {
+            width: calc(95% / 2);
+            text-align: left;
+            &:after {
+                left: 0;
+                transform: translateX(0);
+            }
+            &:last-child {
+                p {
+                    white-space: unset;
+                }
+                &:after {
+                    display: block;
+                }
+            }
+        }
+    }
+    .education {
+        padding: 0;
+        &__subtitle {
+            text-align: center;
+        }
+        &__logo {
+            width: 335px;
+            img {
+                width: 134px;
+                height: 134px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .advantages {
+        .container {
+            max-width: 1200px;
+        }
+        padding: 100px 0 100px;
+        .container {
+            padding: 0;
+        }
+        &__list {
+            justify-content: start;
+            margin: 0 auto;
+        }
+    }
+    .advantages-item {
+        padding: 35px 32px 45px;
+        border-right: 2px solid #f5f4f1;
+        width: auto;
+        &:after {
+           display: none;
+        }
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+            border-right: none;
+            .advantages-item__text {
+                max-width: 395px;
+            }
+            &:after {
+                display: none;
+            }
+        }
+        &__data {
+            font-size: 52px;
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+    .education {
+        display: flex;
+        justify-content: flex-start;
+        &__info {
+            margin-right: 100px;
+        }
+        &__subtitle {
+            margin-bottom: 60px;
+            text-align: left;
+            font-size: 36px;
+        }
+        &__item {
+            margin-bottom: 35px;
+            p {
+                font-size: 20px;
+            }
+        }
+        &__logo {
+            position: relative;
+            top: 50px;
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .advantages {
+        .container {
+            max-width: 1300px;
+        }
+    }
+    .advantages-item {
+        &__data {
+            font-size: 60px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+    }
+}
