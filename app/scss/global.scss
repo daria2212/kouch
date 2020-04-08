@@ -55,16 +55,71 @@ img {
   background-color: $button;
 }
 
+.title {
+  @include reset-style;
+  position: relative;
+  font-size: 18px;
+  max-width: 200px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  &--red {
+    color: $title-red;
+    &:before,
+    &:after {
+      background-color: $title-red;
+    }
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 25px;
+    height: 2px;
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+}
+
+.subtitle {
+  @include reset-style;
+  font-family: "Georgia", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  white-space: pre-line;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 40px;
   }
+  .title {
+    max-width: 425px;
+    font-size: 20px;
+    &:before,
+    &:after {
+      width: 123px;
+    }
+  }
+  .subtitle {
+    white-space: nowrap;
+    font-size: 36px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-    .container {
-      max-width: 1250px;
-      margin: 0 auto;
-      padding: 0;
-    }
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .subtitle {
+    font-size: 40px;
+  }
 }

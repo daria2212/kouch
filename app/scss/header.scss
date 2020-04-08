@@ -38,9 +38,11 @@
 }
 
 .header-main {
-    &__descr {
-        margin-bottom: 25px;
-    }
+    min-height: 678px;
+    background-image: url(../images/header-bg-2@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 bottom;
     &__title {
         @include reset-style;
         margin-bottom: 35px;
@@ -134,6 +136,7 @@
         }
     }
     .header-main {
+        min-height: 1100px;
         &__title {
             font-size: 40px;
             line-height: 44px;
@@ -170,14 +173,13 @@
     .header-main {
         max-width: 1500px;
         margin: 0 auto;
+        min-height: unset;
         background-image: url(../images/header-bg-2-desktop.png);
         background-repeat: no-repeat;
         background-position: right 0;
+        background-size: auto;
         .container {
             padding: 118px 0 277px;
-        }
-        img {
-            display: none;
         }
         &__title{
             margin-bottom: 50px;
