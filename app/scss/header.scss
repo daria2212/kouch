@@ -1,5 +1,5 @@
 .header {
-    background-image: url(../images/header-bg-mobile.png);
+    background-image: url(../images/bg-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
@@ -13,7 +13,8 @@
     background-color: $header-info;
     span {
         display: inline-block;
-        padding-left: 11px;
+        padding-left: 12px;
+        border-left: 1px solid #ffffff;
     }
     svg {
         position: relative;
@@ -24,9 +25,12 @@
 
 .header-info__phone-link {
     display: inline-block;
-    padding-right: 12px;
+    padding-right: 11px;
     color: #ffffff;
-    border-right: 1px solid #ffffff;
+    &:hover {
+        transform: scale(1.2);
+        transition: .4s;
+    }
 }
 
 .header-social {
@@ -39,7 +43,7 @@
 
 .header-main {
     min-height: 678px;
-    background-image: url(../images/header-bg-2@1x.png);
+    background-image: url(../images/header-bg-2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 bottom;
@@ -66,7 +70,7 @@
 
 @media (min-width: $tablet-width) {
     .header {
-        background-image: url(../images/header-bg-desktop.png);
+        background-image: url(../images/bg-desktop.png);
     }
     .header-info {
         padding: 7px 0px;
@@ -84,12 +88,15 @@
             display: inline-block;
             padding: 0px 25px;
             font-size: 0;
+            color: #ffffff;
             &:last-child {
                 padding-right: 0;
             }
             &:hover {
                 svg {
                     fill: $link-hover;
+                    transform: scale(1.3);
+                    transition: .5s;
                 }
             }
         }
@@ -118,15 +125,16 @@
             &:last-child {
                 margin-right: 0;
             }
-            &:hover {
-                border-bottom: 2px solid #ffffff;
-                transition: 0.5s;
-            }
         }
         .phone {
             padding: 35px 0px;
             &__link {
+                display: block;
                 color: #ffffff;
+                &:hover {
+                    transform: scale(1.2);
+                    transition: .4s;
+                }
             }
             svg {
                 position: relative;
@@ -146,6 +154,10 @@
         }
         &__button {
             width: 30%;
+            &:hover {
+                transform: scale(1.2);
+                transition: .5s;
+            }
         }
     }
 }

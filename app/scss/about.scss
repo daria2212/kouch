@@ -2,6 +2,8 @@
     background-color: $bg-white;
     padding: 45px 0 65px;
     &__title {
+        max-width: 200px;
+        margin: 0 auto;
         margin-bottom: 20px;
     }
     &__subtitle {
@@ -72,6 +74,8 @@
     .about {
         padding: 60px 0;
         &__title {
+            max-width: 425px;
+            margin: 0 auto;
             margin-bottom: 25px;
         }
         &__list {
