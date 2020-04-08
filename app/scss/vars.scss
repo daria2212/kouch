@@ -1,9 +1,9 @@
 @mixin retina {
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (min--moz-device-pixel-ratio: 1.5),
-    only screen and (-o-min-device-pixel-ratio: 3/2),
-    only screen and (min-resolution: 1.5dppx),
-    only screen and (min-resolution: 144dpi) {
+        only screen and (min--moz-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-resolution: 1.5dppx),
+        only screen and (min-resolution: 144dpi) {
         @content;
     }
 }
@@ -20,6 +20,5 @@ $desktop-width: 1280px;
 $button: #b4251a;
 $header-info: #212021;
 $link-hover: #de3025;
-$bg-white: #fcfcfc;
 $title-red: #de3025;
 $text: #313131;

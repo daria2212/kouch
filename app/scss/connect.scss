@@ -1,0 +1,182 @@
+.connect {
+    padding: 50px 0;
+    &__title {
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        white-space: pre-line;
+    }
+    &__subtitle {
+        margin-bottom: 18px;
+    }
+    &__text {
+        @include reset-style;
+        margin-bottom: 20px;
+        white-space: pre-line;
+        text-align: center;
+        color: #130f2e;
+    }
+}
+
+.connect-form {
+    position: relative;
+    padding: 40px 30px;
+    box-shadow: 6px 8px 17.8px 2.2px rgba(39, 38, 38, 0.07);
+    input {
+        margin-bottom: 8px;
+        padding: 10px 15px;
+        width: 100%;
+        border: 1px solid rgba(#a1a0a2, 0.5);
+        border-radius: 0;
+        font-size: 14px;
+        text-indent: 3px;
+        &:last-of-type {
+            margin-bottom: 25px;
+        }
+        &:focus,
+        &:active {
+            outline: 1px solid #a1a0a2;
+        }
+        &:valid + label,
+        &:focus + label,
+        &:hover + label {
+            display: none;
+        }
+    }
+    &__label {
+        display: inline-block;
+        position: absolute;
+        font-style: italic;
+        font-size: 14px;
+        color: #a1a0a2;
+        cursor: pointer;
+        span {
+            color: #de3025;
+        }
+        &--name {
+            top: 50px;
+            left: 45px;
+        }
+        &--second-name {
+            top: 98px;
+            left: 45px;
+        }
+        &--phone {
+            top: 146px;
+            left: 45px;
+        }
+        &--mail {
+            top: 194px;
+            left: 45px;
+        }
+    }
+    &__button {
+        margin: 0 auto;
+        padding: 4px 30px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .connect {
+        padding: 60px 0;
+        &__title {
+            max-width: 540px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            white-space: nowrap;
+        }
+        &__subtitle {
+            margin-bottom: 35px;
+        }
+        &__text {
+            margin-bottom: 25px;
+            white-space: nowrap;
+            font-size: 20px;
+        }
+    }
+    .connect-form {
+        max-width: 668px;
+        margin: 0 auto;
+        padding: 60px 40px;
+        &__fields {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        input {
+            width: calc(98% / 2);
+            margin-bottom: 18px;
+            &:nth-of-type(3),
+            &:nth-of-type(4) {
+                margin-bottom: 0;
+            }
+        }
+        &__label {
+            &--name {
+                top: 71px;
+                left: 55px;
+            }
+            &--second-name {
+                top: 71px;
+                left: 366px;
+            }
+            &--phone {
+                top: 127px;
+                left: 55px;
+            }
+            &--mail {
+                top: 127px;
+                left: 366px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .connect {
+        padding: 0;
+        background-image: url(../images/connect-bg.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        .container {
+            padding: 90px 0 110px;
+        }
+    }
+    .connect-form {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 135px;
+        input {
+            padding: 13px 20px;
+            font-size: 16px;
+        }
+        &__label {
+            font-size: 16px;
+            &--name {
+                top: 75px;
+                left: 160px;
+            }
+            &--second-name {
+                top: 75px;
+                left: 634px;
+            }
+            &--phone {
+                top: 137px;
+                left: 160px;
+            }
+            &--mail {
+                top: 137px;
+                left: 634px;
+            }
+        }
+        &__button {
+            background-color: #de3025;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.2);
+                transition: .5s;
+            }
+        }
+    }
+}
