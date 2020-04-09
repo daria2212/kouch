@@ -1,0 +1,49 @@
+.ind-header {
+    background-image: url(../images/ind-header-bg.png);
+    .header-main {
+        min-height: unset;
+        padding-bottom: 55px;
+        background-image: none;
+        &__text {
+            white-space: pre-line;
+        }
+    }
+    .header-info {
+        margin-bottom: 35px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .ind-header {
+        .header-main {
+            padding-bottom: 60px;
+            &__text {
+                white-space: unset;
+            }
+        }
+        .header-info {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .ind-header {
+        background-image: url(../images/ind-header-bg-desktop.png);
+        .header-main {
+            .container {
+                padding: 130px 0 160px;
+            }
+            &__title {
+                margin-bottom: 55px;
+                white-space: unset;
+            }
+            &__text {
+                margin-bottom: 55px;
+            }
+            &__button {
+                width: 180px;
+            }
+        }  
+    }
+}
