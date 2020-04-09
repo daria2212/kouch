@@ -176,6 +176,9 @@
     .education {
         display: flex;
         justify-content: flex-start;
+        &__list {
+            margin-bottom: 0;
+        }
         &__info {
             margin-right: 100px;
         }

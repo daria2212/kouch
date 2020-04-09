@@ -1,0 +1,192 @@
+.partners {
+    padding: 40px 0 55px;
+    background-color: $bg;
+    &__title {
+        max-width: 185px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        margin-bottom: 30px;
+    }
+    &__text {
+        @include reset-style;
+        margin-bottom: 45px;
+        text-align: center;
+        white-space: pre-line;
+    }
+    &__list {
+        @include reset-style;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: calc(95% / 2);
+        &--cronverk {
+            order: 1;
+            justify-content: flex-end;
+        }
+        &--ruge {
+            order: 2;
+            justify-content: flex-end;
+        }
+        &--veb {
+            order: 3;
+            justify-content: flex-start;
+        }
+        &--mirage {
+            order: 4;
+            justify-content: flex-start;
+        }
+        &--mega {
+            order: 5;
+            justify-content: flex-end;
+        }
+        &--cetelem {
+            order: 6;
+            justify-content: flex-end;
+        }
+        &--dlt {
+            order: 7;
+            justify-content: flex-start;
+        }
+        &--monitor {
+            order: 8;
+            justify-content: flex-start;
+        }
+        &--euroset {
+            order: 9;
+            justify-content: flex-end;
+        }
+        &--cashmere {
+            order: 10;
+        }
+        &--sber {
+            order: 11;
+            justify-content: flex-start;
+        }
+        &--ikea {
+            order: 12;
+        }
+        &--credit {
+            order: 13;
+            margin-bottom: 0;
+        }
+    }
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 110px;
+        height: auto;
+        img {
+            filter: grayscale(1);
+            opacity: .35;
+            &:hover {
+                filter: grayscale(0);
+                opacity: 1;
+                transition: .7s;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .partners {
+        padding: 60px 0;
+        &__title {
+            max-width: 450px;
+        }
+        &__subtitle {
+            white-space: unset;
+        }
+        &__text {
+            white-space: unset;
+            margin-bottom: 50px;
+        }
+        &__list {
+            max-width: unset;
+            justify-content: space-around;
+        }
+        &__item {
+            width: 200px;
+            order: unset;
+            justify-content: center;
+        }
+        &__image {
+            width: 140px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .partners {
+        padding: 100px 0;
+        &__subtitle {
+            margin-bottom: 25px;
+        }
+        &__text {
+            font-size: 20px;
+            margin-bottom: 105px;
+        }
+        &__list {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+        &__item {
+            width: 280px;
+            margin-bottom: 30px;
+            &--cronverk,
+            &--mega,
+            &--ikea {
+                justify-content: flex-end;
+            }
+            &--cashmere,
+            &--credit,
+            &--veb {
+                justify-content: flex-start;
+            }
+            &--mirage,
+            &--monitor,
+            &--sber,
+            &--ikea {
+                width: 200px;
+            }
+        }
+        &__image {
+            width: 180px;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .partners {
+        &__list {
+            max-width: unset;
+            width: 1625px;
+            margin: 0 auto;
+        }
+        &__item {
+            width: 320px;
+            &--mirage,
+            &--monitor,
+            &--sber,
+            &--ikea {
+                width: 250px;
+            }
+        }
+        &__image {
+            width: 230px;
+        }
+    }
+}
