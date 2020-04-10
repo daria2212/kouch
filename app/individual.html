@@ -89,17 +89,17 @@
         <nav class="main-nav">
             <div class="container">
                 <ul class="main-nav__list">
-                    <li class="main-nav__item">
+                    <li class="main-nav__item main-nav__item--current">
                         <a href="individual.html">Индивидуальный&nbsp;коучинг</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="corporate.html">Тренинги</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#about-me">Обо&nbsp;мне</a>
+                        <a href="index.html#about-me">Обо&nbsp;мне</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="#partners">Партнеры</a>
+                        <a href="index.html#partners">Партнеры</a>
                     </li>
                 </ul>
                 <div class="phone">
@@ -114,11 +114,11 @@
         </nav>
         <div class="header-main">
             <div class="container">
-                <h2 class="header-main__title">Индивидуальный
+                <h2 class="header-main__title wow fadeInLeft" data-wow-delay=".3s">Индивидуальный
                     коучинг</h2>
-                <p class="header-main__text">Скорейшее достижение
+                <p class="header-main__text wow fadeInLeft" data-wow-delay=".6s">Скорейшее достижение
                     Ваших целей</p>
-                <a href="" class="header-main__button button">Связаться</a>
+                <a href="" class="header-main__button button wow fadeInLeft" data-wow-delay="1.2s">Связаться</a>
             </div>
         </div>
     </header>
@@ -134,7 +134,7 @@
                 получить желаемое.</p>
             <div class="services__descr services-descr">
                 <div class="services-descr__inner">
-                    <div class="services-descr__info">
+                    <div class="services-descr__info wow fadeInRight" data-wow-offset="200">
                         <h4 class="services-descr__subtitle">Индивидуальный коучинг для
                             проработки своих целей</h4>
                         <p class="services-descr__text">В процессе индивидуальной коуч-сессии вы сможете:</p>
@@ -175,7 +175,7 @@
                 с целью максимального
                 повышения его эффективности.</p>
             <ul class="rates__list">
-                <li class="rates__item rates-item rates-item--1">
+                <li class="rates__item rates-item rates-item--1 wow fadeInLeft" data-wow-offset="200">
                     <span class="rates-item__number">1</span>
                     <p class="rates-item__couch">коуч-сессия</p>
                     <p class="rates-item__price">5 000 руб.</p>
@@ -198,7 +198,7 @@
                     <button class="rates-item__button rates-item__button--connect" type="button">Связаться</button>
                     <button class="rates-item__button rates-item__button--sign-up" type="button">Записаться</button>
                 </li>
-                <li class="rates__item rates-item rates-item--5">
+                <li class="rates__item rates-item rates-item--5 wow fadeInRight" data-wow-offset="200">
                     <span class="rates-item__number">5</span>
                     <p class="rates-item__couch">коуч-сессий</p>
                     <p class="rates-item__price">22 500 руб.</p>
@@ -260,7 +260,7 @@
                 <p class="connect__text">Первая ознакомительная
                     встреча
                     (30 минут) </p>
-                <form action="" method="POST" class="connect__form connect-form">
+                <form action="" method="POST" class="connect__form connect-form wow fadeIn">
                     <div class="connect-form__fields">
                         <input type="text" id="user-name" name="user-name" required="required">
                         <label class="connect-form__label connect-form__label--name" for="user-name">Ваше имя
@@ -295,7 +295,7 @@
             <ul class="footer__social footer-social">
                 <li class="footer-social__item">
                     <div class="phone">
-                        <a class="phone__link footer-social__link" href="tel:+79650550101">
+                        <a class="phone__link footer-social__link wow fadeInUp" data-wow-delay="1.6s" href="tel:+79650550101">
                             <svg width="17" height="14">
                                 <use xlink:href="#icon-phone"></use>
                             </svg>
@@ -304,28 +304,28 @@
                     </div>
                 </li>
                 <li class="footer-social__item">
-                    <a href="mailto:mikhail@topcoach.site" class="footer-social__link">
+                    <a href="mailto:mikhail@topcoach.site" class="footer-social__link wow fadeInUp" data-wow-delay="1.2s">
                         <svg width="15" height="11">
                             <use xlink:href="#icon-mail"></use>
                         </svg>Mikhail@topcoach.site
                     </a>
                 </li>
                 <li class="footer-social__item">
-                    <a href="https://vk.com/id911381" class="footer-social__link">
+                    <a href="https://vk.com/id911381" class="footer-social__link wow fadeInUp" data-wow-delay=".9s">
                         <svg width="17" height="11">
                             <use xlink:href="#vk"></use>
                         </svg>vk.com/id911381
                     </a>
                 </li>
                 <li class="footer-social__item">
-                    <a href="https://t.me/Mikhail_S4" class="footer-social__link">
+                    <a href="https://t.me/Mikhail_S4" class="footer-social__link wow fadeInUp" data-wow-delay=".6s">
                         <svg width="17" height="12">
                             <use xlink:href="#telegram"></use>
                         </svg>@Mikhail_S4
                     </a>
                 </li>
                 <li class="footer-social__item">
-                    <a href="skype:dd6397472ccdd1f5" class="footer-social__link">
+                    <a href="skype:dd6397472ccdd1f5" class="footer-social__link wow fadeInUp" data-wow-delay=".3s">
                         <svg width="17" height="12">
                             <use xlink:href="#skype"></use>
                         </svg>live:dd6397472ccdd1f5
@@ -339,6 +339,10 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

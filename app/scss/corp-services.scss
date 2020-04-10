@@ -1,5 +1,5 @@
 @media (min-width: $tablet-width) {
-    .services {
+    .corp-services {
         &__subtitle {
             white-space: pre-line;
         }
@@ -10,20 +10,24 @@
 }
 
 @media (min-width: $desktop-width) {
-    .services-descr {
-        &__image {
-            img {
-                width: 600px;
-                height: 460px;
+    .corp-services {
+        .services-descr {
+            &__image {
+                img {
+                    width: 600px;
+                    height: 460px;
+                }
             }
         }
     }
 }
 
 @media (min-width: 1600px) {
-    .services-descr {
-        &__info {
-            padding-right: 150px;
+    .corp-services {
+        .services-descr {
+            &__info {
+                padding-right: 150px;
+            }
         }
-    }
+    } 
 }

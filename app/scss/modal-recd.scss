@@ -1,0 +1,42 @@
+.modal-recd {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    padding: 65px 30px;
+    width: 265px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fff;
+    z-index: 10;
+    &__title {
+        margin-bottom: 35px;
+    }
+    &__text {
+        @include reset-style;
+        white-space: pre-line;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .modal-recd {
+        width: 650px;
+        &__text {
+            white-space: unset;
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .modal-recd {
+        background-image: url(../images/connect-bg.png);
+        background-repeat: no-repeat;
+        background-position: 180px 0;
+        padding: 80px 60px;
+        width: 800px;
+        &__title {
+            margin-bottom: 50px;
+        }
+    }
+}

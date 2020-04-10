@@ -1,0 +1,121 @@
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 265px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 10;
+    &__title {
+        margin-bottom: 25px;
+        white-space: pre-line;
+    }
+    .connect-form__label--name {
+        top: 115px;
+        left: 45px;
+    }
+    .connect-form__label--second-name {
+        top: 165px;
+        left: 45px;
+    }
+    .connect-form__label--phone {
+        top: 213px;
+        left: 45px;
+    }
+    .connect-form__label--mail {
+        top: 261px;
+        left: 45px;
+    }
+    &__close {
+        font-size: 0;
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        width: 14px;
+        height: 14px;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            top: 12px;
+            right: -3px;
+            width: 20px;
+            height: 1px;
+            background-color: #8f8f8f;
+        }
+        &::before {
+            transform: rotate(-45deg);
+        }
+        &::after {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .modal {
+        width: 668px;
+        &__title {
+            max-width: 550px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            white-space: nowrap;
+        }
+        .connect-form__label--name {
+            top: 134px;
+            left: 60px;
+        }
+        .connect-form__label--second-name {
+            top: 134px;
+            left: 358px;
+        }
+        .connect-form__label--phone {
+            top: 190px;
+            left: 60px;
+        }
+        .connect-form__label--mail {
+            top: 190px;
+            left: 358px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .modal {
+        background-image: url(../images/connect-bg.png);
+        background-repeat: no-repeat;
+        background-position: 400px 0;
+        background-size: cover;
+        width: 1200px;
+        .connect-form__label--name {
+            top: 137px;
+            left: 160px;
+        }
+        .connect-form__label--second-name {
+            top: 137px;
+            left: 632px;
+        }
+        .connect-form__label--phone {
+            top: 200px;
+            left: 160px;
+        }
+        .connect-form__label--mail {
+            top: 200px;
+            left: 632px;
+        }
+        &__close {
+            top: 25px;
+            right: 25px;
+            width: 20px;
+            height: 20px;
+            &::before,
+            &::after {
+                width: 28px;
+            }
+        }
+    }
+}

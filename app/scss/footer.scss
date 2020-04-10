@@ -39,6 +39,13 @@
             display: inline-block;
             margin-bottom: 10px;
             color: #ffffff;
+            &:hover {
+                transform: scale(1.15);
+                transition: .5s;
+                svg {
+                    fill: $link-hover;
+                }
+            }
         }
     }
 }
@@ -50,6 +57,10 @@
         text-transform: uppercase;
         text-decoration: underline;
         color: #ffffff;
+        &:hover {
+            color: $link-hover;
+            transition: .5s;
+        }
     }
 }
 

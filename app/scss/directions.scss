@@ -28,6 +28,11 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
+    &:hover {
+        transform: scale(1.15);
+        transition: .7s;
+        z-index: 3;
+    }
     &:last-child {
         margin-bottom: 0;
     }

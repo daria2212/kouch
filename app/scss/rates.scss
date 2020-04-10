@@ -83,6 +83,12 @@
         &--sign-up {
             display: none;
         }
+        &:hover {
+            color: #ffffff;
+            background-color: #de3025;
+            transition: .5s;
+            text-shadow: 1px 0 0 #ffffff;
+        }
     }
     &__image {
         display: none;
@@ -157,7 +163,7 @@
             text-align: center;
             letter-spacing: 1px;
             text-shadow: 1px 0 0 #399658;
-            font-style: 18px;
+            font-size: 18px;
             color: #399658;
         }
         &__button {
