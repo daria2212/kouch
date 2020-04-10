@@ -7,6 +7,9 @@
         &__text {
             white-space: pre-line;
         }
+        &__title {
+            white-space: pre-line;
+        }
     }
     .header-info {
         margin-bottom: 35px;
@@ -20,6 +23,9 @@
             &__text {
                 white-space: unset;
             }
+            &__title {
+                white-space: unset;
+            }
         }
         .header-info {
             margin-bottom: 0;
@@ -31,8 +37,9 @@
     .ind-header {
         background-image: url(../images/ind-header-bg-desktop.png);
         .header-main {
+            padding-bottom: 0;
             .container {
-                padding: 130px 0 160px;
+                padding: 110px 0 130px;
             }
             &__title {
                 margin-bottom: 55px;

@@ -1,0 +1,46 @@
+.corp-header {
+    background-image: url(../images/corp-header-bg.png);
+    .header-main {
+        min-height: unset;
+        padding-bottom: 55px;
+        background-image: none;
+        &__title {
+            white-space: pre-line;
+        }
+        &__text {
+            white-space: pre-line;
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .corp-header {
+        .header-main {
+            &__title {
+                max-width: 725px;
+                white-space: unset;
+            }
+            &__text {
+                white-space: unset;
+            }
+        }
+    } 
+}
+
+@media (min-width: $desktop-width) {
+    .corp-header {
+        background-image: url(../images/corp-header-bg-desktop.png);
+        .header-main {
+            padding-bottom: 0;
+            .container {
+                padding: 90px 0;
+            }
+            &__title {
+                max-width: 900px;
+            }
+            &__text {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

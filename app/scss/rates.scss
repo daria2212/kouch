@@ -75,8 +75,11 @@
         margin: 0 auto;
         padding: 10px 15px;
         text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: 1px 0 0 #000000;
         border: 2px solid #de3025;
         background-color: #ffffff;
+        cursor: pointer;
         &--sign-up {
             display: none;
         }
@@ -152,7 +155,8 @@
             display: block;
             text-transform: uppercase;
             text-align: center;
-            font-weight: bold;
+            letter-spacing: 1px;
+            text-shadow: 1px 0 0 #399658;
             font-style: 18px;
             color: #399658;
         }

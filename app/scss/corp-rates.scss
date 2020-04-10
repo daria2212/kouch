@@ -1,0 +1,82 @@
+.corp-rates {
+    .rates-item__subtitle {
+        @include reset-style;
+        margin-bottom: 15px;
+        font-family: "Georgia", Arial, sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+        white-space: pre-line;
+    }
+    .rates-item__price {
+        white-space: pre-line;
+        &--cost-ind {
+            margin: 0 20px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            line-height: 18px;
+            border-bottom: 2px solid #f5f4f1;
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .corp-rates {
+        .rates-item {
+            margin-bottom: 0;
+            max-width: 350px;
+            font-size: 18px;
+        }
+        .rates-item__subtitle {
+            white-space: unset;
+            font-size: 30px;
+        }
+        .rates-item__price {
+            &--cost-ind {
+                padding-bottom: 25px;
+            }
+        }
+        .rates-item__time {
+            padding: 15px 20px;
+        }
+    }
+}
+
+@media (min-width: 984px) {
+    .corp-rates {
+        .rates__list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .rates-item {
+            padding: 35px 25px 50px;
+            max-width: 388px;
+        }
+        .rates-item__subtitle {
+            margin-bottom: 30px;
+            font-size: 36px;
+            white-space: pre-line;
+        }
+        .rates-item__price {
+            padding-bottom: 15px;
+            font-size: 20px;
+            &--cost-ind {
+                margin: 0 12px;
+                margin-bottom: 30px;
+                padding-bottom: 25px;
+            }
+        }
+        .rates-item__time {
+            padding: 17px 20px;
+        }
+        .rates-item__list {
+            margin-bottom: 45px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .corp-rates .rates-item__time {
+        padding: 13px 20px;
+    }
+}
