@@ -59,6 +59,7 @@ img {
 .title {
   @include reset-style;
   position: relative;
+  font-weight: normal;
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
