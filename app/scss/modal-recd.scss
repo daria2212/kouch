@@ -18,6 +18,10 @@
     }
 }
 
+.modal-show {
+    display: block;
+}
+
 @media (min-width: $tablet-width) {
     .modal-recd {
         width: 650px;

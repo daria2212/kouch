@@ -117,7 +117,7 @@
                     коучинг</h2>
                 <p class="header-main__text">Повышение эффективности с помощью инструментов коучинга</p>
                 <p class="header-main__text">Профессиональная работа с коучем вживую и онлайн</p>
-                <a href="" class="header-main__button button">Связаться</a>
+                <a href="" class="header-main__button connect-button button">Связаться</a>
             </div>
         </div>
     </header>
@@ -134,7 +134,10 @@
                 <ul class="about__list wow fadeIn" data-wow-duration="2s">
                     <li class="about__item about-item">
                         <span>01</span>
-                        <img src="images/about-1.png" alt="Иконка" width="51" height="54" class="about-item__image">
+                        <picture>
+                            <source type="image/webp" srcset="images/about-1.webp">
+                            <img src="images/about-1.png" alt="Иконка" width="51" height="54" class="about-item__image">
+                        </picture>
                         <h4 class="about-item__title">План Действий</h4>
                         <p class="about-item__text">Постройте четкий план
                             действий и начните его
@@ -142,7 +145,10 @@
                     </li>
                     <li class="about__item about-item">
                         <span>02</span>
-                        <img src="images/about-2.png" alt="Иконка" width="51" height="54" class="about-item__image">
+                        <picture>
+                            <source type="image/webp" srcset="images/about-2.webp">
+                            <img src="images/about-2.png" alt="Иконка" width="51" height="54" class="about-item__image">
+                        </picture>
                         <h4 class="about-item__title">Высокая Эффективность</h4>
                         <p class="about-item__text">Внедрите коучинг в бизнес,
                             улучшите эффективность
@@ -150,7 +156,10 @@
                     </li>
                     <li class="about__item about-item">
                         <span>03</span>
-                        <img src="images/about-3.png" alt="Иконка" width="51" height="54" class="about-item__image">
+                        <picture>
+                            <source type="image/webp" srcset="images/about-3.webp">
+                            <img src="images/about-3.png" alt="Иконка" width="51" height="54" class="about-item__image">
+                        </picture>
                         <h4 class="about-item__title">Руководство</h4>
                         <p class="about-item__text">Станьте руководителем,
                             который вдохновляет
@@ -158,7 +167,10 @@
                     </li>
                     <li class="about__item about-item">
                         <span>04</span>
-                        <img src="images/about-4.png" alt="Иконка" width="51" height="54" class="about-item__image">
+                        <picture>
+                            <source type="image/webp" srcset="images/about-4.webp">
+                            <img src="images/about-4.png" alt="Иконка" width="51" height="54" class="about-item__image">
+                        </picture>
                         <h4 class="about-item__title">Развитие</h4>
                         <p class="about-item__text">Найдите скрытые ресурсы
                             для развития себя
@@ -166,7 +178,10 @@
                     </li>
                     <li class="about__item about-item">
                         <span>05</span>
-                        <img src="images/about-5.png" alt="Иконка" width="51" height="54" class="about-item__image">
+                        <picture>
+                            <source type="image/webp" srcset="images/about-5.webp">
+                            <img src="images/about-5.png" alt="Иконка" width="51" height="54" class="about-item__image">
+                        </picture>
                         <h4 class="about-item__title">Мотивация</h4>
                         <p class="about-item__text">Получите мощный
                             прилив мотивации</p>
@@ -213,12 +228,20 @@
                 <p class="connect__text">Первая ознакомительная
                     встреча
                     (30 минут) </p>
-                <form action="" method="POST" class="connect__form connect-form wow fadeIn" data-wow-duration="1.5s">
+                <form action="mail.php" method="POST" class="connect__form connect-form wow fadeIn" data-wow-duration="1.5s">
                     <div class="connect-form__fields">
+
+                        <!-- Hidden Required Fields -->
+                        <input class="visually-hidden" type="hidden" name="topcoach" value="topcoach">
+                        <input class="visually-hidden" type="hidden" name="admin_email" value="lozovaya.dash@yandex.ru">
+                        <input class="visually-hidden" type="hidden" name="form_subject"
+                            value="Главная страница - Форма на странице - Сообщение">
+                        <!-- END Hidden Required Fields -->
+
                         <input type="text" id="user-name" name="user-name" required="required">
                         <label class="connect-form__label connect-form__label--name" for="user-name">Ваше имя
                             <span>*</span></label>
-                        <input type="text" id="second-name" name="second-name" required="required">
+                        <input type="text" id="second-name" name="second-name" placeholder="Отчество">
                         <label class="connect-form__label connect-form__label--second-name"
                             for="second-name">Отчество</label>
                         <input type="tel" id="phone" name="phone" required="required">
@@ -228,7 +251,7 @@
                         <label class="connect-form__label connect-form__label--mail" for="mail">Ваш e-mail
                             <span>*</span></label>
                     </div>
-                    <button class="connect-form__button button">Связаться</button>
+                    <button type="submit" class="connect-form__button button">Связаться</button>
                 </form>
             </div>
         </section>
@@ -268,6 +291,10 @@
                 </div>
                 <div class="about-me__image-wrapper">
                     <picture>
+                        <source type="image/webp" media="(min-width:1280px)"
+                            srcset="images/about-me-desktop@1x.webp 1x, images/about-me-desktop@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="images/about-me-mobile@1x.webp 1x, images/about-me-mobile@2x.webp 2x">
                         <source type="image/jpeg" media="(min-width:1280px)"
                             srcset="images/about-me-desktop@1x.jpg 1x, images/about-me-desktop@2x.jpg 2x">
                         <img class="about-me__image" src="images/about-me-mobile@1x.jpg"
@@ -324,11 +351,13 @@
                     <div class="education__logo">
                         <a href="http://coachunion.ru/" class="education__link">
                             <picture>
+                                <source type="image/webp" srcset="images/icu.webp">
                                 <img src="images/icu.png" width="118" height="118" alt="Логотип ICU">
                             </picture>
                         </a>
                         <a href="https://intercoaching.net/" class="education__link">
                             <picture>
+                                <source type="image/webp" srcset="images/icta.webp">
                                 <img src="images/icta.png" width="118" height="118" alt="Логотип ICTA">
                             </picture>
                         </a>
@@ -352,6 +381,7 @@
                     <a href="https://kinoteatr.ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-1.webp">
                                 <img src="images/partners-1.png" width="147" height="57" alt="Кронверк">
                             </picture>
                         </div>
@@ -361,6 +391,7 @@
                     <a href="https://aupontrouge.ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-2.webp">
                                 <img src="images/partners-2.png" width="147" height="57" alt="Au Pont Ruge">
                             </picture>
                         </div>
@@ -370,6 +401,7 @@
                     <a href="http://www.dlt.ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-3.webp">
                                 <img src="images/partners-3.png" width="147" height="57" alt="ДЛТ">
                             </picture>
                         </div>
@@ -379,6 +411,7 @@
                     <a href="https://cashmere.ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-4.webp">
                                 <img src="images/partners-4.png" width="147" height="57" alt="Кашемир и Шелк">
                             </picture>
                         </div>
@@ -388,6 +421,7 @@
                     <a href="http://veb-leasing.ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-5.webp">
                                 <img src="images/partners-5.png" width="147" height="57" alt="Вэб лизинг">
                             </picture>
                         </div>
@@ -397,6 +431,7 @@
                     <a href="https://www.mirage.ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-6.webp">
                                 <img src="images/partners-6.png" width="147" height="57" alt="Мираж Синема">
                             </picture>
                         </div>
@@ -406,6 +441,7 @@
                     <a href="https://kinomonitor.ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-7.webp">
                                 <img src="images/partners-7.png" width="147" height="57" alt="Сеть кинотеатров Монитор">
                             </picture>
                         </div>
@@ -415,6 +451,7 @@
                     <a href="https://www.sberbank.ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-8.webp">
                                 <img src="images/partners-8.png" width="147" height="57" alt="Сбербанк">
                             </picture>
                         </div>
@@ -424,6 +461,7 @@
                     <a href="https://www.ikea.com/ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-9.webp">
                                 <img src="images/partners-9.png" width="147" height="57" alt="ИКЕА">
                             </picture>
                         </div>
@@ -433,6 +471,7 @@
                     <a href="https://mega.ru/megacard/about/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-10.webp">
                                 <img src="images/partners-10.png" width="147" height="57" alt="Мегакард">
                             </picture>
                         </div>
@@ -442,6 +481,7 @@
                     <a href="https://www.cetelem.ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-11.webp">
                                 <img src="images/partners-11.png" width="147" height="57" alt="Сетелем">
                             </picture>
                         </div>
@@ -451,6 +491,7 @@
                     <a href="https://euroset.ru" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-12.webp">
                                 <img src="images/partners-12.png" width="147" height="57" alt="Евросеть">
                             </picture>
                         </div>
@@ -460,6 +501,7 @@
                     <a href="https://www.crediteurope.ru/" class="partners__link">
                         <div class="partners__image">
                             <picture>
+                                <source type="image/webp" srcset="images/partners-13.webp">
                                 <img src="images/partners-13.png" width="147" height="57" alt="Credit Europe Bank">
                             </picture>
                         </div>
@@ -483,7 +525,8 @@
             <ul class="footer__social footer-social">
                 <li class="footer-social__item">
                     <div class="phone">
-                        <a class="phone__link footer-social__link wow fadeInUp" data-wow-delay="1.6s" href="tel:+79650550101">
+                        <a class="phone__link footer-social__link wow fadeInUp" data-wow-delay="1.6s"
+                            href="tel:+79650550101">
                             <svg width="17" height="14">
                                 <use xlink:href="#icon-phone"></use>
                             </svg>
@@ -492,7 +535,8 @@
                     </div>
                 </li>
                 <li class="footer-social__item">
-                    <a href="mailto:mikhail@topcoach.site" class="footer-social__link wow fadeInUp" data-wow-delay="1.2s">
+                    <a href="mailto:mikhail@topcoach.site" class="footer-social__link wow fadeInUp"
+                        data-wow-delay="1.2s">
                         <svg width="15" height="11">
                             <use xlink:href="#icon-mail"></use>
                         </svg>Mikhail@topcoach.site
@@ -529,42 +573,51 @@
     </footer>
 
     <section class="modal">
-        <form action="" method="POST" class="modal-form connect__form connect-form">
-            <h2 class="modal__title title title--red">Свяжитесь
-                со мной</h2>
-            <div class="connect-form__fields">
-                <input type="text" id="modal-user-name" name="modal-user-name" required="required">
-                <label class="connect-form__label connect-form__label--name" for="modal-user-name">Ваше имя
-                    <span>*</span></label>
-                <input type="text" id="modal-second-name" name="modal-second-name" required="required">
-                <label class="connect-form__label connect-form__label--second-name"
-                    for="modal-second-name">Отчество</label>
-                <input type="tel" id="modal-phone" name="modal-phone" required="required">
-                <label class="connect-form__label connect-form__label--phone" for="modal-phone">Ваш номер телефона
-                    <span>*</span></label>
-                <input type="email" id="modal-mail" name="modal-mail" required="required">
-                <label class="connect-form__label connect-form__label--mail" for="modal-mail">Ваш e-mail
-                    <span>*</span></label>
-            </div>
-            <button class="connect-form__button button">Связаться</button>
-            <button class="modal__close" type="button">Закрыть</button>
-        </form>
+            <form action="mail.php" method="POST" class="connect__form connect-form">
+                <h2 class="modal__title title title--red">Свяжитесь
+                    со мной</h2>
+                <div class="connect-form__fields">
+
+                     <!-- Hidden Required Fields -->
+                     <input class="visually-hidden" type="hidden" name="topcoach" value="topcoach">
+                     <input class="visually-hidden" type="hidden" name="admin_email" value="lozovaya.dash@yandex.ru">
+                     <input class="visually-hidden" type="hidden" name="form_subject"
+                         value="Главная страница - Кнопка Связаться - Сообщение">
+                     <!-- END Hidden Required Fields -->
+
+                    <input type="text" id="modal-user-name" name="modal-user-name" required="required">
+                    <label class="connect-form__label connect-form__label--name" for="modal-user-name">Ваше имя
+                        <span>*</span></label>
+                    <input type="text" id="modal-second-name" name="modal-second-name" placeholder="Отчество">
+                    <label class="connect-form__label connect-form__label--second-name"
+                        for="modal-second-name">Отчество</label>
+                    <input type="tel" id="modal-phone" name="modal-phone" required="required">
+                    <label class="connect-form__label connect-form__label--phone" for="modal-phone">Ваш номер телефона
+                        <span>*</span></label>
+                    <input type="email" id="modal-mail" name="modal-mail" required="required">
+                    <label class="connect-form__label connect-form__label--mail" for="modal-mail">Ваш e-mail
+                        <span>*</span></label>
+                </div>
+                <button type="submit" class="connect-form__button button">Связаться</button>
+                <button class="modal__close" type="button">Закрыть</button>
+            </form>
     </section>
 
     <section class="modal-recd">
-        <h3 class="modal-recd__title subtitle">Ваша заявка принята</h3>
-        <p class="modal-recd__text">Для уточнения деталей,
-            я свяжусь с Вами по 
-            указанному номеру телефона, в течение
-            3-х часов.</p>
-        <button class="modal__close" type="button">Закрыть</button>
+        <div class="modal-recd__inner">
+            <h3 class="modal-recd__title subtitle">Ваша заявка принята</h3>
+            <p class="modal-recd__text">Для уточнения деталей,
+                я свяжусь с Вами по
+                указанному номеру телефона, в течение
+                3-х часов.</p>
+            <button class="modal-recd__close modal__close" type="button">Закрыть</button>
+        </div>
     </section>
 
     <div class="modal-overlay"></div>
 
 
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 

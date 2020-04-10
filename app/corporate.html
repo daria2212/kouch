@@ -114,12 +114,12 @@
         </nav>
         <div class="header-main">
             <div class="container">
-                <h2 class="header-main__title wow fadeInLeft" data-wow-delay=".3s">Корпоративный 
+                <h2 class="header-main__title wow fadeInLeft" data-wow-delay=".3s">Корпоративный
                     Тренинг «Управление в
                     Стиле Коучинг»</h2>
                 <p class="header-main__text wow fadeInLeft" data-wow-delay=".6s">Инструмент для достижения
                     Ваших целей</p>
-                <a href="" class="header-main__button button wow fadeInLeft" data-wow-delay="1.2s">Связаться</a>
+                <a href="" class="header-main__button connect-button button wow fadeInLeft" data-wow-delay="1.2s">Связаться</a>
             </div>
         </div>
     </header>
@@ -129,7 +129,7 @@
             <h2 class="services__title title title--red">Услуги</h2>
             <h3 class="services__subtitle subtitle">Корпоративный Тренинг
                 «Управление в Стиле Коучинг»
-                </h3>
+            </h3>
             <p class="services__text">Главная ценность любой
                 организации – это
                 заинтересованные и
@@ -137,7 +137,7 @@
             <div class="services__descr services-descr">
                 <div class="services-descr__inner">
                     <div class="services-descr__info wow fadeInRight" data-wow-offset="200">
-                        <h4 class="services-descr__subtitle">Корпоративный Тренинг 
+                        <h4 class="services-descr__subtitle">Корпоративный Тренинг
                             для эффективной команды</h4>
                         <p class="services-descr__text">Результатом проведенного тренинга будет:</p>
                         <ul class="services-descr__list">
@@ -161,6 +161,10 @@
                 </div>
                 <div class="services-descr__image">
                     <picture>
+                        <source media="(min-width:768px)" type="image/webp"
+                            srcset="images/corp-serv-desktop@1x.webp 1x, images/corp-serv-desktop@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="images/corp-serv-mobile@1x.webp 1x, images/corp-serv-mobile@2x.webp 2x">
                         <source media="(min-width:768px)" type="image/jpeg"
                             srcset="images/corp-serv-desktop@1x.jpg 1x, images/corp-serv-desktop@2x.jpg 2x">
                         <img width="320" height="258" src="images/corp-serv-mobile@1x.jpg"
@@ -178,11 +182,11 @@
                 успешного бизнеса.</p>
             <ul class="rates__list">
                 <li class="rates__item rates-item wow fadeInLeft">
-                    <h3 class="rates-item__subtitle">Тренинг 
+                    <h3 class="rates-item__subtitle">Тренинг
                         для руководителей
-                        «Управление 
+                        «Управление
                         в Стиле Коучинг»</h3>
-                    <p class="rates-item__price">Стоимость 
+                    <p class="rates-item__price">Стоимость
                         180 000 руб.</p>
                     <p class="rates-item__time">Продолжительность
                         тренинга 16 часов</p>
@@ -198,14 +202,14 @@
                     <button class="rates-item__button rates-item__button--sign-up" type="button">Заказать</button>
                 </li>
                 <li class="rates__item rates-item wow fadeInRight">
-                    <h3 class="rates-item__subtitle">Тренинг 
-                        для руководителей 
+                    <h3 class="rates-item__subtitle">Тренинг
+                        для руководителей
                         и Корпоративный коучинг
-                        </h3>
+                    </h3>
                     <p class="rates-item__price rates-item__price--cost-ind">Стоимость рассчитывается индивидуально</p>
                     <ul class="rates-item__list">
                         <li>
-                            <p>После тренинга, проходит индивидуальная работа 
+                            <p>После тренинга, проходит индивидуальная работа
                                 с каждым участником</p>
                         </li>
                         <li>
@@ -229,10 +233,18 @@
                     (30 минут) </p>
                 <form action="" method="POST" class="connect__form connect-form wow fadeIn">
                     <div class="connect-form__fields">
+
+                        <!-- Hidden Required Fields -->
+                        <input class="visually-hidden" type="hidden" name="topcoach" value="topcoach">
+                        <input class="visually-hidden" type="hidden" name="admin_email" value="lozovaya.dash@yandex.ru">
+                        <input class="visually-hidden" type="hidden" name="form_subject"
+                            value="Корпоративный тренинг - Форма на странице - Сообщение">
+                        <!-- END Hidden Required Fields -->
+
                         <input type="text" id="user-name" name="user-name" required="required">
                         <label class="connect-form__label connect-form__label--name" for="user-name">Ваше имя
                             <span>*</span></label>
-                        <input type="text" id="second-name" name="second-name" required="required">
+                        <input type="text" id="second-name" name="second-name" placeholder="Отчество">
                         <label class="connect-form__label connect-form__label--second-name"
                             for="second-name">Отчество</label>
                         <input type="tel" id="phone" name="phone" required="required">
@@ -262,7 +274,8 @@
             <ul class="footer__social footer-social">
                 <li class="footer-social__item">
                     <div class="phone">
-                        <a class="phone__link footer-social__link wow fadeInUp" data-wow-delay="1.6s" href="tel:+79650550101">
+                        <a class="phone__link footer-social__link wow fadeInUp" data-wow-delay="1.6s"
+                            href="tel:+79650550101">
                             <svg width="17" height="14">
                                 <use xlink:href="#icon-phone"></use>
                             </svg>
@@ -271,7 +284,8 @@
                     </div>
                 </li>
                 <li class="footer-social__item">
-                    <a href="mailto:mikhail@topcoach.site" class="footer-social__link wow fadeInUp" data-wow-delay="1.2s">
+                    <a href="mailto:mikhail@topcoach.site" class="footer-social__link wow fadeInUp"
+                        data-wow-delay="1.2s">
                         <svg width="15" height="11">
                             <use xlink:href="#icon-mail"></use>
                         </svg>Mikhail@topcoach.site
@@ -307,9 +321,54 @@
         </div>
     </footer>
 
+    <section class="modal">
+        <form action="mail.php" method="POST" class="connect__form connect-form">
+            <h2 class="modal__title title title--red">Свяжитесь
+                со мной</h2>
+            <div class="connect-form__fields">
 
+                <!-- Hidden Required Fields -->
+                <input class="visually-hidden" type="hidden" name="topcoach" value="topcoach">
+                <input class="visually-hidden" type="hidden" name="admin_email" value="lozovaya.dash@yandex.ru">
+                <input class="visually-hidden" type="hidden" name="form_subject"
+                    value="Корпоративный тренинг - Кнопка Связаться - Сообщение">
+                <!-- END Hidden Required Fields -->
+
+                <input type="text" id="modal-user-name" name="modal-user-name" required="required">
+                <label class="connect-form__label connect-form__label--name" for="modal-user-name">Ваше имя
+                    <span>*</span></label>
+                <input type="text" id="modal-second-name" name="modal-second-name" placeholder="Отчество">
+                <label class="connect-form__label connect-form__label--second-name"
+                    for="modal-second-name">Отчество</label>
+                <input type="tel" id="modal-phone" name="modal-phone" required="required">
+                <label class="connect-form__label connect-form__label--phone" for="modal-phone">Ваш номер телефона
+                    <span>*</span></label>
+                <input type="email" id="modal-mail" name="modal-mail" required="required">
+                <label class="connect-form__label connect-form__label--mail" for="modal-mail">Ваш e-mail
+                    <span>*</span></label>
+            </div>
+            <button type="submit" class="connect-form__button button">Связаться</button>
+            <button class="modal__close" type="button">Закрыть</button>
+        </form>
+    </section>
+
+    <section class="modal-recd">
+        <div class="modal-recd__inner">
+            <h3 class="modal-recd__title subtitle">Ваша заявка принята</h3>
+            <p class="modal-recd__text">Для уточнения деталей,
+                я свяжусь с Вами по
+                указанному номеру телефона, в течение
+                3-х часов.</p>
+            <button class="modal-recd__close modal__close" type="button">Закрыть</button>
+        </div>
+    </section>
+
+    <div class="modal-overlay"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/rates.js"></script>
 </body>
 
 </html>
