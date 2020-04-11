@@ -136,13 +136,13 @@
     .advantages {
         .container {
             max-width: 1200px;
-        }
-        padding: 100px 0 100px;
-        .container {
             padding: 0;
         }
+        padding: 100px 0 100px;
         &__list {
             justify-content: start;
+            // for safari 
+            flex-wrap: nowrap;
             margin: 0 auto;
         }
     }
@@ -160,7 +160,7 @@
             padding-right: 0;
             border-right: none;
             .advantages-item__text {
-                max-width: 395px;
+                width: 395px;
             }
             &:after {
                 display: none;
@@ -171,6 +171,9 @@
             span {
                 font-size: 24px;
             }
+        }
+        &__text {
+            font-size: 15px;
         }
     }
     .education {
@@ -204,7 +207,7 @@
 @media (min-width: 1600px) {
     .advantages {
         .container {
-            max-width: 1300px;
+            max-width: 1350px;
         }
     }
     .advantages-item {

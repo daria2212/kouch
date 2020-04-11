@@ -3,9 +3,9 @@
     position: fixed;
     left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
     padding: 65px 30px;
     width: 265px;
-    transform: translate(-50%, -50%);
     text-align: center;
     background-color: #fff;
     z-index: 10;
@@ -34,13 +34,29 @@
 
 @media (min-width: $desktop-width) {
     .modal-recd {
+        top: 200px;
+        transform: translate(0%, 0%);
+        margin-left: -400px;
+        padding: 80px 60px;
+        width: 800px;
         background-image: url(../images/connect-bg.png);
         background-repeat: no-repeat;
         background-position: 180px 0;
-        padding: 80px 60px;
-        width: 800px;
+        animation: zoomIn .8s;
         &__title {
             margin-bottom: 50px;
         }
     }
 }
+
+@-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
