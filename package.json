@@ -9,6 +9,7 @@
   "author": "Daria",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^3.7.2",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -22,7 +23,8 @@
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
     "sass": "^1.26.3",
-    "uglify": "^0.1.5"
+    "uglify": "^0.1.5",
+    "wow.js": "^1.2.2"
   },
   "dependencies": {
     "del": "^5.1.0",
