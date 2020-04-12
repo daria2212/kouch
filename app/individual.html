@@ -14,6 +14,26 @@
 
 <body>
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(61691938, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/61691938" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol id="icon-mail" viewBox="0 0 52 52">
             <path
@@ -118,7 +138,8 @@
                     коучинг</h2>
                 <p class="header-main__text wow fadeInLeft" data-wow-delay=".6s">Скорейшее достижение
                     Ваших целей</p>
-                <a href="" class="header-main__button connect-button button wow fadeInLeft" data-wow-delay="1.2s">Связаться</a>
+                <a href="" class="header-main__button connect-button button wow fadeInLeft"
+                    data-wow-delay="1.2s">Связаться</a>
             </div>
         </div>
     </header>
@@ -272,10 +293,10 @@
                     <div class="connect-form__fields">
 
                         <!-- Hidden Required Fields -->
-                        <input class="visually-hidden" type="hidden" name="topcoach" value="topcoach">
-                        <input class="visually-hidden" type="hidden" name="admin_email" value="lozovaya.dash@yandex.ru">
+                        <input class="visually-hidden" type="hidden" name="website" value="topcoach">
+                        <input class="visually-hidden" type="hidden" name="admin_email" value="mikhail@topcoach.site">
                         <input class="visually-hidden" type="hidden" name="form_subject"
-                            value="Индивидуальный коучинг - Форма на странице - Сообщение">
+                            value="Индивидуальный коучинг - Форма на странице">
                         <!-- END Hidden Required Fields -->
 
                         <input type="text" id="user-name" name="user-name" required="required">
@@ -365,10 +386,10 @@
             <div class="connect-form__fields">
 
                 <!-- Hidden Required Fields -->
-                <input class="visually-hidden" type="hidden" name="topcoach" value="topcoach">
-                <input class="visually-hidden" type="hidden" name="admin_email" value="lozovaya.dash@yandex.ru">
+                <input class="visually-hidden" type="hidden" name="website" value="topcoach">
+                <input class="visually-hidden" type="hidden" name="admin_email" value="mikhail@topcoach.site">
                 <input class="visually-hidden" type="hidden" name="form_subject"
-                    value="Индивидуальный коучинг - Кнопка Связаться - Сообщение">
+                    value="Индивидуальный коучинг - Кнопка Связаться">
                 <!-- END Hidden Required Fields -->
 
                 <input type="text" id="modal-user-name" name="modal-user-name" required="required">
@@ -389,6 +410,37 @@
         </form>
     </section>
 
+    <section class="modal-rates modal">
+        <form action="mail.php" method="POST" class="connect__form connect-form">
+            <h2 class="modal__title title title--red">Свяжитесь
+                со мной</h2>
+            <div class="connect-form__fields">
+
+                <!-- Hidden Required Fields -->
+                <input class="visually-hidden" type="hidden" name="website" value="topcoach">
+                <input class="visually-hidden" type="hidden" name="admin_email" value="mikhail@topcoach.site">
+                <input class="visually-hidden" type="hidden" name="form_subject"
+                    value="Индивидуальный коучинг - Кнопка Записаться">
+                <!-- END Hidden Required Fields -->
+
+                <input type="text" id="modal-user-name" name="modal-user-name" required="required">
+                <label class="connect-form__label connect-form__label--name" for="modal-user-name">Ваше имя
+                    <span>*</span></label>
+                <input type="text" id="modal-second-name" name="modal-second-name" placeholder="Отчество">
+                <label class="connect-form__label connect-form__label--second-name"
+                    for="modal-second-name">Отчество</label>
+                <input type="tel" id="modal-phone" name="modal-phone" required="required">
+                <label class="connect-form__label connect-form__label--phone" for="modal-phone">Ваш номер телефона
+                    <span>*</span></label>
+                <input type="email" id="modal-mail" name="modal-mail" required="required">
+                <label class="connect-form__label connect-form__label--mail" for="modal-mail">Ваш e-mail
+                    <span>*</span></label>
+            </div>
+            <button type="submit" class="connect-form__button button">Связаться</button>
+            <button class="modal-rates__close modal__close" type="button">Закрыть</button>
+        </form>
+    </section>
+
     <section class="modal-recd">
         <div class="modal-recd__inner">
             <h3 class="modal-recd__title subtitle">Ваша заявка принята</h3>
@@ -404,8 +456,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/rates.js"></script>
+    <script src="js/min/main.min.js"></script>
+    <script src="js/min/rates.min.js"></script>
 </body>
 
 </html>

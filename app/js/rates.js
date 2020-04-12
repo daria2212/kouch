@@ -1,7 +1,7 @@
 var connectLink = document.querySelectorAll('.rates-item__button').forEach(connectLink => {
-    var popup = document.querySelector('.modal');
+    var popup = document.querySelector('.modal-rates');
     var overlay = document.querySelector('.modal-overlay');
-    var close = document.querySelector('.modal__close');
+    var close = document.querySelector('.modal-rates__close');
 
     connectLink.addEventListener('click', function (evt) {
         evt.preventDefault();
